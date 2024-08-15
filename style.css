@@ -1,0 +1,283 @@
+html {
+    font-size: 62.5%;
+}
+  
+body {
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'RawlineRegular';
+}
+
+#wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center; 
+    justify-content: center;
+}
+
+.header-content {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify; 
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center; 
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -o-box;
+    display: flex;
+    padding: 10px 160px;
+}
+
+.button-communicate {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: -moz-inline-box;
+    display: -o-inline-box;
+    display: inline-flex;
+    width: 25vw;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end; 
+    justify-content: flex-end;
+}
+
+.button-communicate img {
+    width: 20px;
+    height: auto;
+    gap: 0px;
+}
+
+.email {
+    padding-right: 1.5vw;
+}
+
+.button-lorem, .button-home {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    width: 25vw;
+    text-align: center;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 0.7vh 1.3vw;
+}
+
+.button-lorem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -o-box;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start; 
+    justify-content: flex-start;
+}
+
+.horizontal {
+    display: block;
+    border: 0;
+    border-top: 1px solid #111;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical {
+    size: 500;
+    border: 0;
+    border-left: 1px solid #111;
+    display: block;
+    margin: 0;
+}
+
+#main {
+    display: block;
+}
+
+.main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -o-box;
+    display: flex;
+}
+
+.text, .picture {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    justify-content: center;
+    width: 50%;
+    padding: 3vh 0.5vw;
+}
+
+.container-text {
+    padding-left: 160px;
+    padding-right: 10px;
+}
+
+.picture img {
+    max-height: 80vh;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -o-border-radius: 5px; 
+    border-radius: 5px; 
+}
+
+h1 {
+    font-size: 3.75rem;
+}
+
+.container-text a {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.button-donate {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-box;
+    display: flex;
+    padding: auto;
+    margin-top: 20px;
+}
+
+.button-donate a {
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.button-nav {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .main-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -moz-box;
+        display: -o-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical; 
+        -o-box-orient: vertical; 
+        -ms-flex-direction: column; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content {
+        justify-content: space-between;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -moz-box;
+        display: -o-box;
+        display: flex;
+        padding: 5px 10px;
+    }
+
+    .text, .picture {
+        display: inline-flex;
+        width: fit-content;
+    }
+
+    .container-text {
+        padding: 0 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-text a {
+        text-align: center;
+        margin: 0 3vw;
+    }
+    
+    .button-donate {
+        justify-content: center;
+    }
+
+    .picture img {
+        max-width: 95vw;
+        max-height: none;
+    }
+
+    .vertical {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .button-home {
+        display: none;
+        width: 0;
+    }
+
+    .button-lorem {
+        justify-content: center;
+    }
+    
+    .button-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -moz-box;
+        display: -o-box;
+        display: flex;
+        justify-content: flex-start;
+        width: 25vw;
+        align-items: center;
+    }
+    
+    .button-nav img {
+        max-height: 1.5vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .container-text {
+        text-align: left;
+    }
+
+    .container-text a {
+        margin: 0;
+    }
+    
+    .button-donate {
+        justify-content: flex-start;
+        margin-top: 25.125px;
+    }
+
+    .button-donate .button {
+        padding: 0.9vh 5vw;
+    }
+    h1{
+        /* 3.75 */
+        font-size: 2.3rem;
+    }
+
+    .container-text a{
+        /* 2 */
+        font-size: 1.25rem;
+
+    }
+}
